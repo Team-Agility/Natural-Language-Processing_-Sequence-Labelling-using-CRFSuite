@@ -1,0 +1,33 @@
+Assignment 3 Report
+
+Name: ARJUN DANDA SURESHBABU
+
+1. If you included files other than baseline_crf.py, advanced_crf.py, evaluate_model.py, and hw3_corpus_tool.py, or modified hw3_corpus_tool.py please describe what the files do and/or your modifications to hw3_corpus_tool.py.
+ANS- I have used 1. baseline_crf.py 2. advanced_crf.py 3. evaluate_model.py. The hw3_corpus_tool.py is modified in baseline_crf.py and advanced_crf.py
+
+
+2. Describe how you evaluated your baseline and advanced features
+ANS- I have used evaluate_model.py to identify the accuracy for each of the additional features that I have added.
+
+I manually selected 25% of the files for evaluating the model in a seperate directory and 75% of data to for development in separate folder.
+
+
+3. Describe your advanced feature set.
+ANS- In my advance feature set, I have the following features
+1. All the tokens 
+2. All the POS tags
+3. Speker change
+4. First Utterance
+5. Biagrams for each tokens <Previous token, current token>
+6. Bigrams for each POS <Previous POS, current token>
+5. Feature for abknowledgement for the phrases in dialgues as - "uh-huh", "uh", "huh","ok", "okay" etc.
+6. Feature for wh questions like - "who", "what", "when", "where" etc.
+7. Feature for laughter and other noise in conversation
+
+4. If you tried alternate advanced feature sets, please describe them.
+ANS- I have tried many other alternative features like stop words, identifying the last token in a sentence as "." and "," etc. But with these features the accuracy went down so I have finalised with the above features with the additional feature set, the accuracy increased by 2%.
+
+5. Accuracy of baseline features was:
+ANS- 72.216
+6. Accuracy of advanced features was:
+ANS- 74.35
